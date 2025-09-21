@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === "production") job.start();
 // middleware
 app.use(morgan("dev"));
 app.use(cors({
-  origin: ["http://localhost:8081",], // allow local + prod frontend
+  origin: ["*",], 
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
